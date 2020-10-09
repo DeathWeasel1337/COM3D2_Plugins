@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputHotkeyBlock", "src\InputHotkeyBlock\InputHotkeyBlock.csproj", "{5F52A14E-C52C-46A4-942E-8BDF6F339EC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F52A14E-C52C-46A4-942E-8BDF6F339EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F52A14E-C52C-46A4-942E-8BDF6F339EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F52A14E-C52C-46A4-942E-8BDF6F339EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F52A14E-C52C-46A4-942E-8BDF6F339EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13A67826-0F87-4B14-A889-C8EFF5554CE7}
+	EndGlobalSection
+EndGlobal
