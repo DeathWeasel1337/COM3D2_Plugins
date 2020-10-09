@@ -18,9 +18,12 @@ namespace COM3D2_Plugins
         {
             if (UIInput.selection == null)
                 UIInputSelected = false;
-            //Right click to deselect the UIInput field, which seems to never want to deselect otherwise
-            else if (Input.GetMouseButtonDown(1))
-                Traverse.Create(UIInput.selection).Method("OnSelect", false).GetValue();
+            else if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+            {
+                //Force UIInput fields to lose focus when clicking outside of them
+                if (UICamera.hoveredObject != UIInput.selection.gameObject)
+                    Traverse.Create(UIInput.selection).Method("OnSelect", false).GetValue();
+            }
             else
                 UIInputSelected = UIInput.selection.gameObject.activeInHierarchy;
         }
