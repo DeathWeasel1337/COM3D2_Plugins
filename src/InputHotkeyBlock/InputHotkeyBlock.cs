@@ -1,6 +1,8 @@
 ﻿using BepInEx;
 using HarmonyLib;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace COM3D2_Plugins
 {
@@ -9,7 +11,7 @@ namespace COM3D2_Plugins
     {
         public const string PluginGUID = "deathweasel.com3d2.inputhotkeyblock";
         public const string PluginName = "InputHotkeyBlock";
-        public const string PluginVersion = "1.0";
+        public const string PluginVersion = "1.1";
         private static bool UIInputSelected;
 
         private void Awake() => Harmony.CreateAndPatchAll(typeof(Hooks));
@@ -33,13 +35,18 @@ namespace COM3D2_Plugins
         /// </summary>
         private static bool HotkeyBlock()
         {
-            //UI elements from some mods
+            //GUI elements from some mods
             if (GUIUtility.keyboardControl > 0)
                 return false;
 
             //NGUI UIInput
             if (UIInputSelected)
                 return false;
+
+            //Unity InputFields
+            if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != null)
+                if (EventSystem.current.currentSelectedGameObject.GetComponent<InputField>() != null)
+                    return false;
 
             return true;
         }
