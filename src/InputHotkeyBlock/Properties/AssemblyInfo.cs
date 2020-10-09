@@ -5,7 +5,7 @@ using static COM3D2_Plugins.InputHotkeyBlock;
 [assembly: AssemblyTitle(PluginName)]
 [assembly: AssemblyDescription(PluginName)]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("https://github.com/DeathWeasel1337/COM3D2_Plugins")]
 [assembly: AssemblyProduct("InputHotkeyBlock")]
 [assembly: AssemblyCopyright("Copyright ©DeathWeasel1337 2020")]
 [assembly: AssemblyTrademark("")]
