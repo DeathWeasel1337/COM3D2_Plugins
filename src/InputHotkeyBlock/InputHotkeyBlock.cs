@@ -51,20 +51,20 @@ namespace COM3D2_Plugins
             return true;
         }
 
-        private class Hooks
+        private static class Hooks
         {
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKey), typeof(KeyCode))]
-            internal static bool GetKeyCode() => HotkeyBlock();
+            private static bool GetKeyCode() => HotkeyBlock();
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKey), typeof(string))]
-            internal static bool GetKeyString() => HotkeyBlock();
+            private static bool GetKeyString() => HotkeyBlock();
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKeyDown), typeof(KeyCode))]
-            internal static bool GetKeyDownCode() => HotkeyBlock();
+            private static bool GetKeyDownCode() => HotkeyBlock();
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKeyDown), typeof(string))]
-            internal static bool GetKeyDownString() => HotkeyBlock();
+            private static bool GetKeyDownString() => HotkeyBlock();
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKeyUp), typeof(KeyCode))]
-            internal static bool GetKeyUpCode() => HotkeyBlock();
+            private static bool GetKeyUpCode() => HotkeyBlock();
             [HarmonyPrefix, HarmonyPatch(typeof(Input), nameof(Input.GetKeyUp), typeof(string))]
-            internal static bool GetKeyUpString() => HotkeyBlock();
+            private static bool GetKeyUpString() => HotkeyBlock();
         }
     }
 }

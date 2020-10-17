@@ -18,6 +18,8 @@ namespace COM3D2_Plugins
         private void Start()
         {
             _manager = GetComponent<ConfigurationManager.ConfigurationManager>();
+
+            //Disable the ConfigurationManager hotkey since we're adding a button to show the UI instead
             _manager.OverrideHotkey = true;
         }
 
@@ -44,7 +46,7 @@ namespace COM3D2_Plugins
                 uiEventTrigger.onHoverOver.Clear();
                 uiEventTrigger.onHoverOut.Clear();
                 uiEventTrigger.onDragStart.Clear();
-                EventDelegate.Add(uiEventTrigger.onHoverOver, () => { ShowTooltip("BepInEx Configuration Manager"); });
+                EventDelegate.Add(uiEventTrigger.onHoverOver, () => ShowTooltip("BepInEx Configuration Manager"));
                 EventDelegate.Add(uiEventTrigger.onHoverOut, HideTooltip);
                 EventDelegate.Add(uiEventTrigger.onDragStart, HideTooltip);
 
