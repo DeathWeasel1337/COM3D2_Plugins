@@ -33,15 +33,19 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\lib\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\lib\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>..\..\lib\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\lib\BepInEx.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ConfigurationManager, Version=16.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\BepInEx.ConfigurationManager.16.1.0\lib\net35\ConfigurationManager.dll</HintPath>
@@ -55,9 +59,11 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\lib\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\lib\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +78,18 @@
     <Analyzer Include="..\..\packages\BepInEx.Analyzers.1.0.1\analyzers\dotnet\cs\BepInEx.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.Unity.Analyzers.1.8.2\analyzers\dotnet\cs\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\API\API.csproj">
+      <Project>{2b24b203-89cf-433d-9ccd-6c8b3aaba945}</Project>
+      <Name>API</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\icon.png" />
+  </ItemGroup>
+  <Import Project="..\Shared\Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>IF EXIST "$(SolutionDir)PostBuild.bat" CALL "$(SolutionDir)PostBuild.bat" "$(TargetPath)"</PostBuildEvent>

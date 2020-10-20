@@ -7,7 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputHotkeyBlock", "src\Inp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManagerWrapper", "src\ConfigurationManagerWrapper\ConfigurationManagerWrapper.csproj", "{8357A34C-4ED8-4686-8B43-0EC11FA0A6A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "src\API\API.csproj", "{2B24B203-89CF-433D-9CCD-6C8B3AABA945}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "src\Shared\Shared.shproj", "{E92A3D6F-1B57-4493-9452-DE18A0DD4209}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\Shared\Shared.projitems*{2b24b203-89cf-433d-9ccd-6c8b3aaba945}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{5f52a14e-c52c-46a4-942e-8bdf6f339ec2}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{8357a34c-4ed8-4686-8b43-0ec11fa0a6a3}*SharedItemsImports = 4
+		src\Shared\Shared.projitems*{e92a3d6f-1b57-4493-9452-de18a0dd4209}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -21,6 +31,10 @@ Global
 		{8357A34C-4ED8-4686-8B43-0EC11FA0A6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8357A34C-4ED8-4686-8B43-0EC11FA0A6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8357A34C-4ED8-4686-8B43-0EC11FA0A6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B24B203-89CF-433D-9CCD-6C8B3AABA945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B24B203-89CF-433D-9CCD-6C8B3AABA945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B24B203-89CF-433D-9CCD-6C8B3AABA945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B24B203-89CF-433D-9CCD-6C8B3AABA945}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using static InputHotkeyBlock;
+using static COM3D2API.Plugin;
 
 [assembly: AssemblyTitle(PluginName)]
 [assembly: AssemblyDescription(PluginName)]
