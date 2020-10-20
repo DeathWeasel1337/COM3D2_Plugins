@@ -7,8 +7,18 @@ Plugins for Custom Order Maid 3D2
 
 The plugin .dll should end up in COM3D2\BepInEx\plugins
 
+#### COM3D2 API
+**v1.0 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v3/COM3D2.API.v1.0.zip)**
+
+API plugins can use to do stuff. Currently only has an API for adding buttons to the SystemShortcut (gear icon) menu.
+
+#### ConfigurationManagerWrapper
+**v1.0 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v3/COM3D2.ConfigurationManagerWrapper.v1.0.zip)**
+
+Adds a button to the menu which opens the [BepInEx.ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager) window. Requires COM3D2 API.
+
 #### InputHotkeyBlock
-**v1.1 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v2/COM3D2.InputHotkeyBlock.v1.1.zip)**<br/>
+**v1.1 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v2/COM3D2.InputHotkeyBlock.v1.1.zip)**
 
 Prevents hotkeys from plugins from triggering while typing in input fields.
 
