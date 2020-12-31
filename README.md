@@ -18,7 +18,7 @@ API plugins can use to do stuff. Currently only has an API for adding buttons to
 Adds a button to the menu which opens the [BepInEx.ConfigurationManager](https://github.com/BepInEx/BepInEx.ConfigurationManager) window. Requires COM3D2 API.
 
 #### InputHotkeyBlock
-**v1.1 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v2/COM3D2.InputHotkeyBlock.v1.1.zip)**
+**v1.2 - [Download](https://github.com/DeathWeasel1337/COM3D2_Plugins/releases/download/v5/COM3D2.InputHotkeyBlock.v1.2.zip)**
 
 Prevents hotkeys from plugins from triggering while typing in input fields.
 
@@ -26,4 +26,5 @@ Because input fields don't ever seem to lose focus on their own, input fields ar
 
 <details><summary>Change Log</summary>
 v1.1 Support for Unity InputFields<br/>
+v1.2 No long blocks return or backspace<br/>
 </details>
